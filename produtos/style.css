@@ -1,0 +1,82 @@
+body {
+	font-family: "Gabriola";
+	color: #444444;
+	min-height: 100px;
+	text-align: center;
+}
+
+
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div#columns figure {
+	background: #fefefe;
+	border: 5px;
+	box-shadow: 0px 1px 1px 1.9px rgba(41, 53, 40, 0.411);
+	margin: 0 2px 25px;
+	padding: 10px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+	display: inline-block;
+}
+
+#columns a {
+	text-decoration: none;
+}
+
+div#columns figure img {
+	width: 300px;
+	height: 180px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+div#columns figure figcaption {
+	font-size: 20px;
+	color: #444;
+}
+
+
+#columns:hover figure:not(:hover) {
+	opacity: 0.2;
+}
+
+
+
+@media screen and (max-width: 750px) {
+	#columns {
+		column-gap: 0px;
+	}
+
+	#columns figure {
+		width: 20%;
+	}
+}
+
+.container-T{
+	display: grid;
+	grid-template-columns:repeat(2, auto);
+	grid-template-rows:60px 60px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.inicio {
+    padding: 15px;
+    background-color:#56996580;
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	border-radius: 5px;
+}

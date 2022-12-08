@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>recuperação de senha</title>
+
+    </head>
+
+    <body>
+
+        <div id="login">
+
+            <form class="card">
+
+                <div class="card-header">
+
+                    <h2>Recuperação de senha</h2>
+
+                </div>
+
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="email" style="font-size: 20px;">E-mail:</label>
+                        <input type="text" id="email" placeholder="...@gmail.com">                
+                    </div>
+                    <p item-align: center;><button style="background-color: rgb(151, 218, 198);border:none;border-radius:2px;font-size:14px;">
+                        <a style="color:indigo;" href="../adm/enviado.html" class="recuperar_senha">Enviar</a></button></p>
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
+
+<style>
+
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color:  rgb(174, 202, 193);
+
+}
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+
+    background-color: rgba(19, 19, 19, 0.3);
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:280px;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: #fff;
+
+}
+
+.card-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #fff;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label {
+
+    color: #fff;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    outline: none;
+
+    color: #fff;
+
+}
+
+</style>
